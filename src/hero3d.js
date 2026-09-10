@@ -1,4 +1,4 @@
-import * as THREE from '../assets/vendor/three.module.min.js';
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.min.js';
 const fallback=document.querySelector('.money-hero-art');
 const canvas=fallback?.parentElement?.insertBefore(Object.assign(document.createElement('canvas'),{id:'money-hero-3d',className:'money-hero-3d',hidden:true,ariaHidden:'true'}),fallback.nextSibling);
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches, constrained=navigator.connection?.saveData||innerWidth<760;
